@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+    <title>我的员工</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/base.css"/>
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/shopping.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+
+</head>
+<body style="padding-bottom: 1.45rem;">
+
+<!--添加员工列表-->
+<div class="shopping">
+    <div class="shop-group-item">
+        <ul>
+            <li>
+                <div class="shop-info">
+                    <input type="checkbox" class="check goods-check goodsCheck">
+                    <div class="shop-right"><img src="images/rightBlue.png"></div>
+                    <div class="shop-main">
+                        <div class="shop-main-name"><img src="images/professorIco.png"><span>阮一丹   深户一档综合医疗</span></div>
+                        <div class="shop-main-id">222222222222222222</div>
+                        <div class="shop-main-no">
+                            NO. 34567823456
+                            <div class="shop-price">
+                                <div class="shop-pices">￥<span class="price">500.00</span></div>
+                                <div class="shop-arithmetic" style="display: none;">
+                                    <a href="javascript:;" class="minus">-</a>
+                                    <span class="num">1</span>
+                                    <a href="javascript:;" class="plus">+</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="shop-info">
+                    <input type="checkbox" class="check goods-check goodsCheck">
+                    <div class="shop-right"><img src="images/rightBlue.png"></div>
+                    <div class="shop-main">
+                        <div class="shop-main-name"><img src="images/professorIco.png"><span>阮一丹   深户一档综合医疗</span></div>
+                        <div class="shop-main-id">222222222222222222</div>
+                        <div class="shop-main-no">
+                            NO. 34567823456
+                            <div class="shop-price">
+                                <div class="shop-pices">￥<span class="price">500.00</span></div>
+                                <div class="shop-arithmetic" style="display: none;">
+                                    <a href="javascript:;" class="minus">-</a>
+                                    <span class="num">1</span>
+                                    <a href="javascript:;" class="plus">+</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="shop-info">
+                    <input type="checkbox" class="check goods-check goodsCheck">
+                    <div class="shop-right"><img src="images/rightBlue.png"></div>
+                    <div class="shop-main">
+                        <div class="shop-main-name"><img src="images/professorIco.png"><span>阮一丹   深户一档综合医疗</span></div>
+                        <div class="shop-main-id">222222222222222222</div>
+                        <div class="shop-main-no">
+                            NO. 34567823456
+                            <div class="shop-price">
+                                <div class="shop-pices">￥<span class="price">500.00</span></div>
+                                <div class="shop-arithmetic" style="display: none;">
+                                    <a href="javascript:;" class="minus">-</a>
+                                    <span class="num">1</span>
+                                    <a href="javascript:;" class="plus">+</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="shopPrice"><span class="shop-total-amount ShopTotal"></span></div>
+    </div>
+</div>
+<!--end-->
+
+
+<!--没有员工为空状态展示-->
+<div class="professorNull">
+    <img src="images/null.png">
+    <span>暂时还没有员工，赶紧去添加吧！</span>
+    <div class="smallBtn"><a href="addProfessor.html">添加员工</a></div>
+</div>
+<!--end-->
+
+<div class="payment-bar">
+    <div class="all-checkbox"><input type="checkbox" class="check goods-check" id="AllCheck">全选</div>
+    <div class="shop-total">
+        合计：<span id="AllTotal">0.00</span>
+    </div>
+</div>
+
+<div class="payment-btn">
+    <div>添加员工</div>
+    <div>继续缴纳</div>
+</div>
+
+<footer>
+    <ul class="footerNav">
+        <li>
+            <a href="index.html">
+                <img src="images/nav.png">
+                <p>首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="myProfessor.html">
+                <img src="images/nav1.png">
+                <p>我的员工</p>
+            </a>
+        </li>
+        <li>
+            <a href="personal.html">
+                <img src="images/nav2.png">
+                <p>个人中心</p>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+
+<script>
+    $(function () {
+        FastClick.attach(document.body);
+    });
+
+    $(".payment-btn div:first-child").click(function () {
+        window.location.href = "addProfessor.html";
+    });
+
+    $(".payment-btn div:last-child").click(function () {
+        window.location.href = "payOrder.html";
+    });
+
+
+    $(".shop-main").click(function () {
+        window.location.href = "revise.html";
+    });
+</script>
+</body>
+</html>

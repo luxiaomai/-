@@ -1,0 +1,25 @@
+html{font:12px "Hiragino Sans GB","Microsoft Yahei",arial,宋体,"Helvetica Neue",Helvetica,STHeiTi,sans-serif}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,button,textarea,p,th,td{padding:0;margin:0;}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+a{text-decoration:none;color:#000;outline:none}
+li{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;
+font-style:inherit;font-weight:inherit}
+input,button,textarea,select{*font-size:100%}
+img{border: none; vertical-align: top;}
+html,body{
+    max-width: 750px;
+    margin: 0 auto;
+}
+* html{ 
+background-image:url(about:blank); 
+background-attachment:fixed; 
+}
+/*css默认重置*/
+input[type="checkbox"]{-webkit-appearance:none;outline: none;}
+input.check{background:url(../images/radio.png) no-repeat center left;background-size:.18rem .18rem;position:absolute;top:50%;left:.1rem;margin-top:-.18rem;width:.18rem;height:.35rem;}
+input.check:checked{background:url(../images/radio-1.png) no-repeat center left;background-size:.18rem .18rem;}
+.checked{background:url(../images/radio-1.png) no-repeat left center;background-size:.18rem .18rem;position:absolute;top:50%;left:.1rem;margin-top:-.18rem;width:.18rem;height:.35rem;}

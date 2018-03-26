@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+    <title>修改信息</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/picker.min.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+
+</head>
+<body>
+    <div class="professorInput">
+        <input type="text" id="name" class="input text" placeholder="请输入姓名" maxlength="4">
+        <span class="clear"><img src="images/x.png"></span>
+        <div class="ico"><img src="images/enroll_ico2.png" style="width: .12rem;height: .16rem;"></div>
+    </div>
+
+    <div class="professorInput">
+        <input type="text" id="id" class="input text" placeholder="请输入身份证号码">
+        <span class="clear1"><img src="images/x.png"></span>
+        <div class="ico"><img src="images/enroll_ico2.png" style="width: .12rem;height: .16rem;"></div>
+    </div>
+
+    <div class="professorInput">
+        <input type="text" id="openid" class="input text" placeholder="请输入电脑号">
+        <span class="clear2"><img src="images/x.png"></span>
+        <div class="ico"><img src="images/enroll_ico2.png" style="width: .12rem;height: .16rem;"></div>
+    </div>
+
+    <div class="professorInput">
+        <div class="input" id="type">请选择医疗类型</div>
+        <span class="right"><img src="images/right.png"></span>
+        <div class="ico"><img src="images/enroll_ico2.png" style="width: .12rem;height: .16rem;"></div>
+    </div>
+
+    <div class="reviseBtn">
+        <button class="reviseBtn-button1">删除</button>
+        <button class="reviseBtn-button">确定</button>
+    </div>
+    <script>
+    $(function () {
+        FastClick.attach(document.body);
+    });
+
+    var nameEl = document.getElementById('type');
+
+    var data = [
+        {
+            text: '深户一档综合医疗¥1134',
+            value: 1
+        }, {
+            text: '深户二档综合医疗¥834',
+            value: 2
+        }, {
+            text: '深户三档综合医疗¥534',
+            value: 3
+        }
+    ];
+
+    var picker = new Picker({
+        data: [data],//初始化数组
+        selectedIndex: [0]//初始化数组对象位置
+    });
+
+    picker.on('picker.select', function (selectedVal, selectedIndex) {
+        nameEl.innerText = data[selectedIndex[0]].text;
+    });
+
+    picker.on('picker.change', function (index, selectedIndex) {
+        console.log(index);
+        console.log(selectedIndex);
+    });
+
+    picker.on('picker.valuechange', function (selectedVal, selectedIndex) {
+        console.log(selectedVal);
+        console.log(selectedIndex);
+    });
+
+    nameEl.addEventListener('click', function () {
+        picker.show();
+    });
+
+    $("#name").keyup(function () {
+        if ($("#name").val() != '') {
+            $(".clear").show();
+        } else {
+            $(".clear").hide();
+        }
+    });
+
+    $(".clear").click(function () {
+        $(this).hide();
+        $("#name").val('');
+    });
+
+    $("#id").keyup(function () {
+        if ($("#id").val() != '') {
+            $(".clear1").show();
+        } else {
+            $(".clear1").hide();
+        }
+    });
+
+    $(".clear1").click(function () {
+        $(this).hide();
+        $("#id").val('');
+    });
+
+    $("#openid").keyup(function () {
+        if ($("#openid").val() != '') {
+            $(".clear2").show();
+        } else {
+            $(".clear2").hide();
+        }
+    });
+
+    $(".clear2").click(function () {
+        $(this).hide();
+        $("#openid").val('');
+    });
+
+    $(".reviseBtn-button").click(function () {
+        window.location.href = "myProfessor.html";
+    });
+</script>
+</body>
+</html>
+

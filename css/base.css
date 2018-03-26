@@ -1,0 +1,15 @@
+@charset "utf-8";
+html,body,div,p,form,label,ul,li,dl,dt,dd,ol,img,button,b,em,strong,small,h1,h2,h3,h4,h5,h6{margin:0;padding:0;border:0;list-style:none;font-style:normal;}
+body{font:12px "Hiragino Sans GB","Microsoft Yahei",arial,宋体,"Helvetica Neue",Helvetica,STHeiTi,sans-serif;font-size:.14rem;}
+a, a.link{color:#333;text-decoration:none;}
+a, a.link:hover{color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+
+input[type="checkbox"]{-webkit-appearance:none;outline: none;border: none;}
+.check{background:url(../images/radio.png) no-repeat center left;background-size:.18rem .18rem;position:absolute;top:50%;left:.1rem;margin-top:-.18rem;width:.18rem;height:.35rem;}
+.check:checked{background:url(../images/radio-2.png) no-repeat center left;background-size:.18rem .18rem;}
+.goodsCheck:checked{background:url(../images/radio-2.png) no-repeat center left;background-size:.18rem .18rem;}
+.check:checked{background:url(../images/radio-2.png) no-repeat center left;background-size:.18rem .18rem;}
+.checked{background:url(../images/radio-2.png) no-repeat left center;background-size:.18rem .18rem;position:absolute;top:50%;left:.15rem;margin-top:-.18rem;width:.18rem;height:.35rem;}
+
+

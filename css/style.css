@@ -1,0 +1,684 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.indexHeader{
+    width: 3.45rem;
+    height: .48rem;
+    margin: .2rem auto 0;
+}
+.indexHeader div{
+    width: 1.15rem;
+    height: .48rem;
+    line-height: .48rem;
+    float: left;
+    background: #009EFF;
+    text-align: center;
+    color: #fff;
+    font-size: .14rem;
+}
+.indexContent{
+    width: 3.45rem;
+    height: .48rem;
+    margin: 0 auto;
+    border-bottom: 1px solid #efeff4;
+}
+
+.indexContent div{
+    width: 1.13rem;
+    height: .48rem;
+    line-height: .48rem;
+    float: left;
+    text-align: center;
+    font-size: .14rem;
+    border-left: 1px solid #efeff4;
+    border-right: 1px solid #efeff4;
+    color: #333;
+}
+
+.indexContent div:nth-child(2){
+    border: none;
+    width: 1.15rem;
+    height: .48rem;
+}
+
+.explain{
+    color: #666;
+    font-size: .14rem;
+    margin: .2rem 0 .2rem .15rem;
+}
+
+.explainText a{
+    font-size: .14rem;
+    color: #009EFF;
+    display: block;
+    text-align: center;
+}
+
+.button{
+    width: 3.43rem;
+    height: .44rem;
+    line-height: .44rem;
+    text-align: center;
+    font-size: .16rem;
+    border: none;
+    display: block;
+    background: #009EFF;
+    box-shadow: 0 2px 2px 0 rgba(0,158,255,0.34);
+    border-radius: 100px;
+    margin: 0 auto .14rem;
+}
+
+.button a{
+    color: #fff;
+    display: block;
+}
+
+.footerNav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: .49rem;
+    background: rgba(255,255,255,0.89);
+    box-shadow: inset 0 0 0 0 #E5E5E5;
+    border-top: 1px solid #efeff4;
+}
+
+.footerNav >li{
+    float: left;
+    width: 33.3%;
+}
+
+.footerNav li a{
+    height: .49rem;
+    text-align: center;
+    display: block;
+    font-size: .12rem;
+    color: #666;
+}
+
+.footerNav li a img{
+    width: .22rem;
+    height: .22rem;
+    margin: .06rem 0 .04rem 0;
+}
+
+/*如何购买*/
+.explainImg{
+    width: 100%;
+    height: 100%;
+    margin-bottom: .5rem;
+}
+.explainBtn{
+    height: .49rem;
+    line-height: .49rem;
+    width: 100%;
+    text-align: center;
+    font-size: .16rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    background: #009EFF;
+}
+
+.explainBtn a{
+    color: #fff;
+    display: block;
+}
+
+/*添加社保员工*/
+.professorInput{
+    position: relative;
+    width: 96%;
+    margin: .1rem auto 0;
+    box-shadow: inset 0 -1px 1px -1px #ccc;
+    background: #fff;
+    height: .48rem;
+}
+
+.professorInput .input {
+    width: 88%;
+    height: .3rem;
+    line-height: .3rem;
+    margin: 0 auto;
+    display: block;
+    font-size: .14rem;
+    outline: none;
+    background: none;
+    border: none;
+    padding-left: .3rem;
+    padding-top: .09rem;
+}
+
+.professorInput .input::placeholder{
+    color: #999;    
+}
+
+.professorInput .clear,.professorInput .clear1,.professorInput .clear2{
+    width: .14rem;
+    height: .14rem;
+    position: absolute;
+    top: 50%;
+    right: .14rem;
+    margin-top: -.07rem;
+    display: none;
+}
+
+.professorInput .right{
+    width: .08rem;
+    height: .13rem;
+    position: absolute;
+    right: .14rem;
+    top: 50%;
+    margin-top: -.065rem;
+}
+
+.professorInput .ico{
+    width: .16rem;
+    height: .18rem;
+    position: absolute;
+    left: .08rem;
+    top: 50%;
+    margin-top: -.08rem;
+}
+
+.professorInput .clear img,.professorInput .clear1 img,.professorInput .clear2 img,.professorInput .right img{
+    width: 100%;
+    height: 100%;
+}
+
+.professorText{
+    margin: .16rem 0 .3rem .15rem;
+    font-size: .14rem;
+    color: #009EFF;
+}
+
+.reviseBtn{
+    height: .44rem;
+    line-height: .44rem;
+    width: 3.47rem;
+    margin: .2rem auto 0;
+}
+
+.reviseBtn-button{
+    width: 2.13rem;
+    height: .44rem;
+    line-height: .44rem;
+    text-align: center;
+    font-size: .16rem;
+    border: none;
+    display: block;
+    background: #009EFF;
+    box-shadow: 0 2px 2px 0 rgba(0,158,255,0.34);
+    border-radius: 100px;
+    margin: 0 auto .14rem;
+    float: right;
+    color: #fff;
+}
+
+.reviseBtn-button1{
+    width: 1.2rem;
+    height: .44rem;
+    line-height: .44rem;
+    text-align: center;
+    font-size: .16rem;
+    border: none;
+    display: block;
+    background: #5DC1FF;
+    box-shadow: 0 2px 2px 0 rgba(0,158,255,0.34);
+    border-radius: 100px;
+    margin: 0 auto .14rem;
+    float: left;
+    color: #fff;
+}
+
+/*我的员工*/
+.professorNull{
+    width: 3rem;
+    height: 5rem;
+    margin: .88rem auto 0;
+    text-align: center;
+    display: none;
+}
+.professorNull img{
+    width: 1.26rem;
+    height: 1.18rem;
+}
+
+.professorNull span{
+    color: #333;
+    font-size: .14rem;
+    display: block;
+}
+
+.professorNull .smallBtn{
+    width: 1.68rem;
+    height: .44rem;
+    line-height: .44rem;
+    text-align: center;
+    font-size: .16rem;
+    border: none;
+    display: block;
+    background: #009EFF;
+    box-shadow: 0 2px 2px 0 rgba(0,158,255,0.34);
+    border-radius: 100px;
+    margin: .8rem auto .14rem;
+}
+
+.professorNull .smallBtn a{
+    display: block;
+    color: #fff;
+}
+
+/*我的员工*/
+.shopping {
+    clear: both;
+    overflow: hidden;
+    height: auto;
+}
+
+.shop-group-item {
+    margin-bottom: .08rem;
+}
+
+.shop-group-item ul li {
+    border-bottom: 1px solid #fff;
+}
+
+.shop-group-item ul li:last-child {
+    border-bottom: none;
+}
+
+.shop-info {
+    background: #fff;
+    height: 1.32rem;
+    padding: 0 .15rem;
+    position: relative;
+    margin-top: .15rem;
+}
+
+.shop-info .checkbox {
+    background: url(../images/radio.png) no-repeat left center;
+    background-size: .2rem .2rem;
+    position: absolute;
+    top: 50%;
+    left: .15rem;
+    margin-top: -.6rem;
+    width: .2rem;
+    height: 1.2rem;
+}
+
+.shop-right{
+    width: .08rem;
+    height: .13rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -.065rem;
+    right: .35rem;
+}
+
+.shop-right img{
+    width: 100%;
+    height: 100%;
+}
+
+.shop-info .shop-main{
+    background: url(../images/professorBg.png) no-repeat;
+    background-size: cover;
+    width: 3.17rem;
+    height: 100%;
+    margin-left: .28rem;
+}
+
+.shop-main-name{
+    color: #333;
+    font-size: .18rem;
+    height: .3rem;
+    line-height: .3rem;
+    padding-top: .22rem;
+}
+
+.shop-main-id{
+    height: .3rem;
+    line-height: .3rem;
+    color: #333;
+    font-size: .14rem;
+    margin-left: .48rem;
+}
+
+.shop-main-no{
+    height: .3rem;
+    line-height: .3rem;
+    color: #333;
+    font-size: .14rem;
+    margin-left: .48rem;
+}
+
+.shop-main-no .shop-price{
+    font-size: .14rem;
+    color: #009EFF;
+    float: right;
+    margin-right: .37rem;
+}
+
+.shop-main-name img{
+    width: .18rem;
+    height: .184rem;
+    margin: .06rem .14rem 0 .14rem;
+}
+
+.shopPrice {
+    background: #fff;
+    height: .35rem;
+    line-height: .35rem;
+    padding: 0 .15rem;
+    text-align: right;
+    display: none;
+}
+
+.shopPrice span {
+    color: #f00;
+}
+
+.payment-bar {
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+    height: .43rem;
+    position: fixed;
+    bottom: .96rem;
+    border-top: 1px solid #efeff4;
+    background: #fff;
+}
+
+.payment-bar .all-checkbox {
+    float: left;
+    line-height: .44rem;
+    padding-left: .4rem;
+}
+
+.payment-bar .shop-total {
+    float: right;
+    -webkit-box-flex: 1.0;
+    margin: 0 .14rem 0 .7rem;
+}
+
+.payment-bar .shop-total {
+    display: block;
+    font-size: .14rem;
+    color: #009EFF;
+    height: .44rem;
+    line-height: .44rem;
+}
+
+.payment-bar .shop-total span {
+    font-size: .14rem;
+}
+
+.payment-btn{
+    height:.48rem;
+    line-height: .48rem;
+    position: fixed;
+    bottom: .48rem;
+    font-size: .16rem;
+    color: #fff;
+}
+
+.payment-btn div:first-child{
+    width: 1.36rem;
+    height: 100%;
+    background: #5DC2FF;
+    float: left;
+    text-align: center;
+}
+
+.payment-btn div:last-child{
+    width: 2.39rem;
+    height: 100%;
+    background: #009EFF;
+    float: right;
+    text-align: center;
+}
+
+/*提交订单*/
+.order {
+    clear: both;
+    overflow: hidden;
+    height: auto;
+}
+
+.order-group-item {
+    margin-bottom: .08rem;
+}
+
+.order-group-item ul li {
+    border-bottom: 1px solid #fff;
+}
+
+.order-group-item ul li:last-child {
+    border-bottom: none;
+}
+
+.order-info {
+    background: #fff;
+    height: 1.32rem;
+    padding: 0 .15rem;
+    position: relative;
+    margin-top: .15rem;
+}
+
+.order-info .checkbox {
+    background: url(../images/radio.png) no-repeat left center;
+    background-size: .2rem .2rem;
+    position: absolute;
+    top: 50%;
+    left: .15rem;
+    margin-top: -.6rem;
+    width: .2rem;
+    height: 1.2rem;
+}
+
+.order-right{
+    width: .08rem;
+    height: .13rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -.065rem;
+    right: .35rem;
+}
+
+.order-right img{
+    width: 100%;
+    height: 100%;
+}
+
+.order-info .order-main{
+    background: url(../images/professorBg.png) no-repeat;
+    background-size: cover;
+    width: 3.47rem;
+    height: 100%;
+}
+
+.order-main-name{
+    color: #333;
+    font-size: .18rem;
+    height: .3rem;
+    line-height: .3rem;
+    padding-top: .22rem;
+}
+
+.order-main-id{
+    height: .3rem;
+    line-height: .3rem;
+    color: #333;
+    font-size: .14rem;
+    margin-left: .48rem;
+}
+
+.order-main-no{
+    height: .3rem;
+    line-height: .3rem;
+    color: #333;
+    font-size: .14rem;
+    margin-left: .48rem;
+}
+
+.order-main-no .order-price{
+    font-size: .14rem;
+    color: #009EFF;
+    float: right;
+    margin-right: .37rem;
+}
+
+.order-main-name img{
+    width: .18rem;
+    height: .184rem;
+    margin: .06rem .14rem 0 .14rem;
+}
+
+.orderPrice {
+    background: #fff;
+    height: .35rem;
+    line-height: .35rem;
+    padding: 0 .15rem;
+    text-align: right;
+    display: none;
+}
+
+.orderPrice span {
+    color: #f00;
+}
+
+.orderBtn{
+    width: 100%;
+    height: .49rem;
+    line-height: .49rem;
+    position: fixed;
+    bottom: 0;
+    font-size: .16rem;
+    color: #fff;
+}
+
+.orderBtn div:first-child{
+    width: 50%;
+    float: left;
+    background: #5DC2FF;
+    text-align: center;
+}
+
+.orderBtn div:last-child{
+    width: 50%;
+    float: left;
+    background: #009EFF;
+    text-align: center;
+}
+
+.order-title{
+    height: .44rem;
+    line-height: .45rem;
+    border-bottom: 1px solid #efeff4;
+    padding: 0 .14rem;
+    font-size: .14rem;
+    color: #009EFF;
+}
+
+.order-title img{
+    width: .16rem;
+    height: .16rem;
+    float: left;
+    margin-top: .15rem;
+    margin-right: .14rem;
+}
+
+/*个人中心*/
+.personal-header{
+    width: 100%;
+    height: 1.17rem;
+    background: url(../images/personalBg.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.personal-header-img{
+    width: .68rem;
+    height: .68rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -.34rem;
+    bottom: 0;
+}
+
+.personal-header-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.personal-name{
+    color: #333;
+    font-size: .14rem;
+    text-align: center;
+}
+
+.personal-name div:first-child{
+    margin: .1rem auto;
+}
+
+.personal-nav{
+    width: 3.3rem;
+    height: .5rem;
+    margin: .4rem auto 0;
+}
+
+.personal-nav li{
+    float: left;
+    width: 33.3%;
+}
+
+.personal-nav li:nth-child(1)::after,.personal-nav li:nth-child(2)::after{
+    content: '';
+    border-right: 1px solid #dfdfdf;
+    height: .32rem;
+    display: inherit;
+    margin-top: -.48rem;
+}
+
+.personal-nav li a{
+    display: block;
+    font-size: .12rem;
+    color: #999;
+    text-align: center;
+}
+
+.personal-nav li a img{
+    margin-bottom: .13rem;
+}
+
+.personal-nav li a span{
+    display: block;
+}
+
+.personal-price{
+    width: 3.47rem;
+    height: 0.78rem;
+    margin: .24rem auto 0;
+    box-shadow: 0 2px 12px 0 rgba(102,102,102,0.17);
+    clear: both;
+}
+
+.personal-price .price,.personal-price .point{
+    float: left;
+    width: 50%;
+    height: .48rem;
+    color: #333;
+    font-size: .2rem;
+    text-align: center;
+    margin-top: .18rem;
+}
+
+.personal-price .price span,.personal-price .point span{
+    display: block;
+    color: #999;
+    font-size: .12rem;
+    margin-top: .04rem;
+}
